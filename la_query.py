@@ -40,4 +40,8 @@ r = requests.get(url, headers=headers)
 print ("status code of post: {}".format(s.status_code))
 print ("status code of get: {}".format(r.status_code)) 
 
-print json.dumps(s.json(), indent=4)
+# Python 2 print
+# print json.dumps(s.json(), indent=4)
+
+# Python 3 print
+print(json.dumps(s.json(), indent=4))
